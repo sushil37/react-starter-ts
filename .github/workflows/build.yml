@@ -1,0 +1,31 @@
+name: Build and Validate Commits
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate commit messages
+        run: npx commitlint --from=HEAD~1 --to=HEAD
+
+      - name: Build project
+        run: npm run build
+
+      - name: Run tests
+        run: npm test
