@@ -10,7 +10,7 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
           PR_FILTER: "labelled"
-          PR_LABELS: "auto-update"
+          PR_LABELS: "autoupdate"
           MERGE_MSG: "Branch was auto-updated."
           MERGE_CONFLICT_ACTION: "fail"
 
