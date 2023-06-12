@@ -1,7 +1,8 @@
 {
   "name": "my-react-app",
+  "homepage":"https://shrestha-sushil.com.np",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
