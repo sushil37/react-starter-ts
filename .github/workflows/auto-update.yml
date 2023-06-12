@@ -1,7 +1,6 @@
 name: autoupdate
 on:
-  push:
-    branches: [dev]
+  push: {}
 jobs:
   autoupdate:
     name: autoupdate
