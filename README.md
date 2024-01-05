@@ -4,7 +4,7 @@ A minimal starting point for interactive applications with basic components, hoo
 
 ## Getting started
 
-**[Create a new Github repository with the template](https://github.com/sushil37/react-starter-ts/)** or clone the repo:
+**[Create a new Github repository with the template](https://github.com/sushil37/react-starter-ts/generate)** or clone the repo:
 
 ```sh
 git clone git@github.com:sushil37/react-starter-ts.git && cd react-starter-ts
